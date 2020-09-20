@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="screen"></div>
+  <div class="ordinary">
+    <div class="ordinary__place place">1</div>
+    <div class="ordinary__place place">2</div>
+    <div class="ordinary__place place">3</div>
+    <div class="ordinary__place place">4</div>
+    <div class="ordinary__place place">5</div>
+    <div class="ordinary__place place">6</div>
+    <div class="ordinary__place place">7</div>
+    <div class="ordinary__place place">8</div>
+    <div class="ordinary__place place">9</div>
+    <div class="ordinary__place place">10</div>
+  </div>
+  <div class="vip">
+    <div class="vip__place place">1</div>
+    <div class="vip__place place">2</div>
+    <div class="vip__place place">3</div>
+    <div class="vip__place place">4</div>
+  </div>
+  <input class="input__value" type="text" value="0" readonly>
+  <button class="buy__btn">Купить</button>
+  <button class="order__btn">Забронировать место</button>
+  <div class="modal">
+    <h2 class="modal__title">Ваш бюждет на сегодня?</h2>
+    <p class="modal__text">Обычные места – 100</p>
+    <p class="modal__text"><span>VIP</span> места – 200</p>
+    <input class="modal__input" type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+    <button class="modal__btn">Выбрать место</button>
+  </div>
+  <div class="modal-end">
+    <h2 class="modal-end__title">Спасибо за покупку</h2>
+    <p class="modal-end__text">Вы купили билет(ы) на сумму <span class="price"></span></p>
+    <button class="modal-end__btn">Подтвердить</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
